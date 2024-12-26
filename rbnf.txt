@@ -1,0 +1,61 @@
+topRule = "#program", identifier, ";", "start variable", varsBlok, ";", codeBlok, "stop";
+
+varsBlok = "integer_4", identifier, { ",", identifier }, ";";
+
+identifier = up_letter, { low_letter | number };
+
+codeBlok = "start", { write | read | assignment | ifStatement | goto_statement |
+                      labelRule | forToOrDownToDoRule | while | repeatUntil }, "stop";
+
+read = "input", "(", identifier, ")";
+
+write = "output", "(", equation | stringRule, ")";
+
+assignment = identifier, "=", equation, ";";
+
+ifStatement = "if", "(", equation, ")", codeBlok, [elseStatement];
+
+elseStatement = "else", codeBlok;
+
+goto_statement = "goto", identifier, ";";
+
+labelRule = identifier, ":";
+
+forToOrDownToDoRule = "for", assignment, ("to" | "downto"), equation, "do", codeBlok;
+
+while = "while", "(", equation, ")", codeBlok;
+
+repeatUntil = "repeat", codeBlok, "until", "(", equation, ")";
+
+equation = signedNumber | identifier | notRule, 
+          { (mult | arithmetic | logic | compare), (signedNumber | identifier | equation) };
+
+notRule = "!!", (signedNumber | identifier | equation);
+
+stringRule = "\"", string, "\"";
+
+comment = "##", string, "##";
+
+string = { low_letter | up_letter | number };
+
+signedNumber = [sign], digit, { digit };
+
+sign = "+" | "-";
+
+low_letter = "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j" | "k" | "l" | 
+             "m" | "n" | "o" | "p" | "q" | "r" | "s" | "t" | "u" | "v" | "w" | "x" | 
+             "y" | "z";
+
+up_letter = "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J" | "K" | "L" | 
+            "M" | "N" | "O" | "P" | "Q" | "R" | "S" | "T" | "U" | "V" | "W" | "X" | 
+            "Y" | "Z";
+
+digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9";
+
+arithmetic = "+" | "-";
+
+mult = "*" | "/" | "%";
+
+logic = "&&" | "||";
+
+compare = "==" | "!=" | "<=" | ">=";

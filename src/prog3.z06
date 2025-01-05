@@ -1,0 +1,45 @@
+##Prog3##
+#program prog3;
+start
+variable integer_4 Aaaaaaaaaaaaaaaaa,Aaaaaaaaaaaaaaaa2,Bbbbbbbbbbbbbbbbb,Xxxxxxxxxxxxxxxxx,Cccccccccccccccc1,Cccccccccccccccc2;
+input Aaaaaaaaaaaaaaaaa;
+input Bbbbbbbbbbbbbbbbb;
+for Aaaaaaaaaaaaaaaa2<==Aaaaaaaaaaaaaaaaa to Bbbbbbbbbbbbbbbbb do
+	output Aaaaaaaaaaaaaaaa2 * Aaaaaaaaaaaaaaaa2;
+
+for Aaaaaaaaaaaaaaaa2<==Bbbbbbbbbbbbbbbbb to Aaaaaaaaaaaaaaaaa do
+	output Aaaaaaaaaaaaaaaa2 * Aaaaaaaaaaaaaaaa2;
+
+Xxxxxxxxxxxxxxxxx<==0;
+Cccccccccccccccc1<==0;
+while Cccccccccccccccc1 <= Aaaaaaaaaaaaaaaaa 
+start
+	Cccccccccccccccc2<==0;
+	while Cccccccccccccccc2 <= Bbbbbbbbbbbbbbbbb
+	start	
+		Xxxxxxxxxxxxxxxxx<==Xxxxxxxxxxxxxxxxx + 1;
+		Cccccccccccccccc2<==Cccccccccccccccc2 + 1;
+	stop
+	end while
+Cccccccccccccccc1<==Cccccccccccccccc1 + 1;
+stop	
+end while
+output Xxxxxxxxxxxxxxxxx;
+
+Xxxxxxxxxxxxxxxxx<==0;
+Cccccccccccccccc1<==1;
+repeat
+start
+  Cccccccccccccccc2<==1;
+  repeat
+  start
+    Xxxxxxxxxxxxxxxxx<==Xxxxxxxxxxxxxxxxx + 1;
+    Cccccccccccccccc2<==Cccccccccccccccc2 + 1;
+	stop
+  until !!(Cccccccccccccccc2 >= Bbbbbbbbbbbbbbbbb)
+  Cccccccccccccccc1<==Cccccccccccccccc1 + 1;
+ stop
+until !!(Cccccccccccccccc1 >= Aaaaaaaaaaaaaaaaa)
+output Xxxxxxxxxxxxxxxxx;
+
+stop

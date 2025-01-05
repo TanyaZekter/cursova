@@ -1,0 +1,57 @@
+##Prog2##
+#program prog2;
+start
+variable integer_4 Aaaaaaaaaaaaaaaaa,Bbbbbbbbbbbbbbbbb,Ccccccccccccccccc;
+input Aaaaaaaaaaaaaaaaa;
+input Bbbbbbbbbbbbbbbbb;
+input Ccccccccccccccccc;
+if(Aaaaaaaaaaaaaaaaa >= Bbbbbbbbbbbbbbbbb)
+start
+	if(Aaaaaaaaaaaaaaaaa >= Ccccccccccccccccc)
+	start
+		goto Abigger;		
+	stop
+	else
+	start
+		output Ccccccccccccccccc;
+		goto Outofif;
+		Abigger:		
+		output Aaaaaaaaaaaaaaaaa;
+		goto Outofif;
+	stop
+stop	
+if(Bbbbbbbbbbbbbbbbb <= Ccccccccccccccccc)
+start
+	output Ccccccccccccccccc;
+stop	
+else
+start
+	output Bbbbbbbbbbbbbbbbb;
+stop
+Outofif:	
+
+if((Aaaaaaaaaaaaaaaaa == Bbbbbbbbbbbbbbbbb) && (Aaaaaaaaaaaaaaaaa == Ccccccccccccccccc) && (Bbbbbbbbbbbbbbbbb == Ccccccccccccccccc))
+start
+	output 1;
+stop	
+else
+start
+	output 0;
+stop
+if((Aaaaaaaaaaaaaaaaa <= 0) || (Bbbbbbbbbbbbbbbbb <= 0) || (Ccccccccccccccccc <= 0))
+start
+	output -1;
+stop	
+else
+start
+	output 0;
+stop
+if(!!(Aaaaaaaaaaaaaaaaa <= (Bbbbbbbbbbbbbbbbb + Ccccccccccccccccc)))
+start
+	output(10);
+stop	
+else
+start
+	output(0);
+stop
+stop

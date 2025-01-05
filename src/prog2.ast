@@ -1,0 +1,115 @@
+|-- program
+|    |-- var
+|    |    |-- Ccccccccccccccccc
+|    |    |-- var
+|    |    |    |-- Bbbbbbbbbbbbbbbbb
+|    |    |    |-- var
+|    |    |    |    |-- Aaaaaaaaaaaaaaaaa
+|    |-- statement
+|    |    |-- statement
+|    |    |    |-- statement
+|    |    |    |    |-- statement
+|    |    |    |    |    |-- statement
+|    |    |    |    |    |    |-- statement
+|    |    |    |    |    |    |    |-- statement
+|    |    |    |    |    |    |    |    |-- statement
+|    |    |    |    |    |    |    |    |    |-- input
+|    |    |    |    |    |    |    |    |    |    |-- Aaaaaaaaaaaaaaaaa
+|    |    |    |    |    |    |    |    |    |-- input
+|    |    |    |    |    |    |    |    |    |    |-- Bbbbbbbbbbbbbbbbb
+|    |    |    |    |    |    |    |    |-- input
+|    |    |    |    |    |    |    |    |    |-- Ccccccccccccccccc
+|    |    |    |    |    |    |    |-- if
+|    |    |    |    |    |    |    |    |-- >=
+|    |    |    |    |    |    |    |    |    |-- Aaaaaaaaaaaaaaaaa
+|    |    |    |    |    |    |    |    |    |-- Bbbbbbbbbbbbbbbbb
+|    |    |    |    |    |    |    |    |-- branches
+|    |    |    |    |    |    |    |    |    |-- compound
+|    |    |    |    |    |    |    |    |    |    |-- if
+|    |    |    |    |    |    |    |    |    |    |    |-- >=
+|    |    |    |    |    |    |    |    |    |    |    |    |-- Aaaaaaaaaaaaaaaaa
+|    |    |    |    |    |    |    |    |    |    |    |    |-- Ccccccccccccccccc
+|    |    |    |    |    |    |    |    |    |    |    |-- branches
+|    |    |    |    |    |    |    |    |    |    |    |    |-- compound
+|    |    |    |    |    |    |    |    |    |    |    |    |    |-- goto
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |-- Abigger
+|    |    |    |    |    |    |    |    |    |    |    |    |-- compound
+|    |    |    |    |    |    |    |    |    |    |    |    |    |-- statement
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |-- statement
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |-- statement
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |-- statement
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |-- output
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |-- Ccccccccccccccccc
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |-- goto
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |-- Outofif
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |-- Abigger
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |-- output
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |-- Aaaaaaaaaaaaaaaaa
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |-- goto
+|    |    |    |    |    |    |    |    |    |    |    |    |    |    |    |-- Outofif
+|    |    |    |    |    |    |-- if
+|    |    |    |    |    |    |    |-- <=
+|    |    |    |    |    |    |    |    |-- Bbbbbbbbbbbbbbbbb
+|    |    |    |    |    |    |    |    |-- Ccccccccccccccccc
+|    |    |    |    |    |    |    |-- branches
+|    |    |    |    |    |    |    |    |-- compound
+|    |    |    |    |    |    |    |    |    |-- output
+|    |    |    |    |    |    |    |    |    |    |-- Ccccccccccccccccc
+|    |    |    |    |    |    |    |    |-- compound
+|    |    |    |    |    |    |    |    |    |-- output
+|    |    |    |    |    |    |    |    |    |    |-- Bbbbbbbbbbbbbbbbb
+|    |    |    |    |    |-- Outofif
+|    |    |    |    |-- if
+|    |    |    |    |    |-- &
+|    |    |    |    |    |    |-- &
+|    |    |    |    |    |    |    |-- ==
+|    |    |    |    |    |    |    |    |-- Aaaaaaaaaaaaaaaaa
+|    |    |    |    |    |    |    |    |-- Bbbbbbbbbbbbbbbbb
+|    |    |    |    |    |    |    |-- ==
+|    |    |    |    |    |    |    |    |-- Aaaaaaaaaaaaaaaaa
+|    |    |    |    |    |    |    |    |-- Ccccccccccccccccc
+|    |    |    |    |    |    |-- ==
+|    |    |    |    |    |    |    |-- Bbbbbbbbbbbbbbbbb
+|    |    |    |    |    |    |    |-- Ccccccccccccccccc
+|    |    |    |    |    |-- branches
+|    |    |    |    |    |    |-- compound
+|    |    |    |    |    |    |    |-- output
+|    |    |    |    |    |    |    |    |-- 1
+|    |    |    |    |    |    |-- compound
+|    |    |    |    |    |    |    |-- output
+|    |    |    |    |    |    |    |    |-- 0
+|    |    |    |-- if
+|    |    |    |    |-- |
+|    |    |    |    |    |-- |
+|    |    |    |    |    |    |-- <=
+|    |    |    |    |    |    |    |-- Aaaaaaaaaaaaaaaaa
+|    |    |    |    |    |    |    |-- 0
+|    |    |    |    |    |    |-- <=
+|    |    |    |    |    |    |    |-- Bbbbbbbbbbbbbbbbb
+|    |    |    |    |    |    |    |-- 0
+|    |    |    |    |    |-- <=
+|    |    |    |    |    |    |-- Ccccccccccccccccc
+|    |    |    |    |    |    |-- 0
+|    |    |    |    |-- branches
+|    |    |    |    |    |-- compound
+|    |    |    |    |    |    |-- output
+|    |    |    |    |    |    |    |-- -
+|    |    |    |    |    |    |    |    |-- 0
+|    |    |    |    |    |    |    |    |-- 1
+|    |    |    |    |    |-- compound
+|    |    |    |    |    |    |-- output
+|    |    |    |    |    |    |    |-- 0
+|    |    |-- if
+|    |    |    |-- !
+|    |    |    |    |-- <=
+|    |    |    |    |    |-- Aaaaaaaaaaaaaaaaa
+|    |    |    |    |    |-- +
+|    |    |    |    |    |    |-- Bbbbbbbbbbbbbbbbb
+|    |    |    |    |    |    |-- Ccccccccccccccccc
+|    |    |    |-- branches
+|    |    |    |    |-- compound
+|    |    |    |    |    |-- output
+|    |    |    |    |    |    |-- 10
+|    |    |    |    |-- compound
+|    |    |    |    |    |-- output
+|    |    |    |    |    |    |-- 0
